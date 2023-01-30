@@ -50,10 +50,10 @@ export class MenuDemo {
     }
 
     update() {
-        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Data Updated' });
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Data Updated', life: 3000 });
     }
 
     delete() {
-        this.messageService.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted' });
+        this.messageService.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
     }
 }
