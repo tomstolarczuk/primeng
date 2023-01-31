@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChipDemo } from './chipdemo';
-import { ChipDemoRoutingModule } from './chipdemo-routing.module';
+import { NgModule } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { ChipModule } from 'primeng/chip';
 import { PanelModule } from 'primeng/panel';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { ChipModule } from 'primeng/chip';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { ChipDemo } from './chipdemo';
+import { ChipDemoRoutingModule } from './chipdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, ChipDemoRoutingModule, ButtonModule, PanelModule, TabViewModule, ChipModule, AppDemoActionsModule, AppCodeModule],

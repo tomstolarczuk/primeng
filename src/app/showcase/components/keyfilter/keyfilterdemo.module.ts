@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KeyFilterDemo } from './keyfilterdemo';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MessageModule } from 'primeng/message';
-import { KeyFilterDemoRoutingModule } from './keyfilterdemo-routing.module';
-import { KeyFilterModule } from 'primeng/keyfilter';
 import { InputTextModule } from 'primeng/inputtext';
+import { KeyFilterModule } from 'primeng/keyfilter';
+import { MessageModule } from 'primeng/message';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { KeyFilterDemo } from './keyfilterdemo';
+import { KeyFilterDemoRoutingModule } from './keyfilterdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, FormsModule, KeyFilterDemoRoutingModule, KeyFilterModule, InputTextModule, MessageModule, TabViewModule, AppDemoActionsModule, AppCodeModule],

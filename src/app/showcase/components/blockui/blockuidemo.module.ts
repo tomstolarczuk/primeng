@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BlockUIDemo } from './blockuidemo';
-import { BlockUIDemoRoutingModule } from './blockuidemo-routing.module';
+import { NgModule } from '@angular/core';
 import { BlockUIModule } from 'primeng/blockui';
 import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { BlockUIDemo } from './blockuidemo';
+import { BlockUIDemoRoutingModule } from './blockuidemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, BlockUIDemoRoutingModule, BlockUIModule, ButtonModule, PanelModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

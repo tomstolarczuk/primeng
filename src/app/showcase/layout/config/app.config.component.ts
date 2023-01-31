@@ -2,8 +2,8 @@ import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { DomHandler } from 'primeng/dom';
 import { Subscription } from 'rxjs';
-import { AppConfig } from './domain/appconfig';
-import { AppConfigService } from './service/appconfigservice';
+import { AppConfig } from '../../domain/appconfig';
+import { AppConfigService } from '../../service/appconfigservice';
 
 @Component({
     selector: 'app-config',

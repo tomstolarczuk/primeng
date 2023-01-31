@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SkeletonDemo } from './skeletondemo';
-import { SkeletonDemoRoutingModule } from './skeletondemo-routing.module';
+import { NgModule } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
-import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
 import { SkeletonModule } from 'primeng/skeleton';
 import { TableModule } from 'primeng/table';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { TabViewModule } from 'primeng/tabview';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { SkeletonDemo } from './skeletondemo';
+import { SkeletonDemoRoutingModule } from './skeletondemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, SkeletonDemoRoutingModule, ButtonModule, PanelModule, TabViewModule, SkeletonModule, TableModule, AppCodeModule, AppDemoActionsModule],

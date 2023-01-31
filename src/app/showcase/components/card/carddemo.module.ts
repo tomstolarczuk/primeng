@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardDemo } from './carddemo';
-import { CardDemoRoutingModule } from './carddemo-routing.module';
+import { NgModule } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TabViewModule } from 'primeng/tabview';
-import { ButtonModule } from 'primeng/button';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { CardDemo } from './carddemo';
+import { CardDemoRoutingModule } from './carddemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, CardDemoRoutingModule, CardModule, ButtonModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

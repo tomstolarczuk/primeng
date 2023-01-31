@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TreeSelectDemoRoutingModule } from './treeselectdemo-routing.module';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
+import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { PanelModule } from 'primeng/panel';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { CascadeSelectModule } from 'primeng/cascadeselect';
-import { FormsModule } from '@angular/forms';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
 import { TreeSelectModule } from 'primeng/treeselect';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
 import { TreeSelectDemo } from './treeselectdemo';
+import { TreeSelectDemoRoutingModule } from './treeselectdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, TreeSelectDemoRoutingModule, ButtonModule, PanelModule, TabViewModule, CascadeSelectModule, FormsModule, AppDemoActionsModule, AppCodeModule, TreeSelectModule],

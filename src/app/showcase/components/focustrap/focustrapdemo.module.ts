@@ -1,21 +1,21 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DialogModule } from 'primeng/dialog';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
-import { TabViewModule } from 'primeng/tabview';
-import { FocusTrapDemoRoutingModule } from './focustrapdemo-routing.module';
-import { FocusTrapDemo } from './focustrapdemo';
 import { AutoCompleteModule } from 'primeng/autocomplete';
+import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { EditorModule } from 'primeng/editor';
 import { FocusTrapModule } from 'primeng/focustrap';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { TabViewModule } from 'primeng/tabview';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { FocusTrapDemo } from './focustrapdemo';
+import { FocusTrapDemoRoutingModule } from './focustrapdemo-routing.module';
 
 @NgModule({
     imports: [

@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuDemo } from './menudemo';
-import { MenuDemoRoutingModule } from './menudemo-routing.module';
-import { MenuModule } from 'primeng/menu';
+import { NgModule } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { MenuModule } from 'primeng/menu';
 import { TabViewModule } from 'primeng/tabview';
 import { ToastModule } from 'primeng/toast';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { MenuDemo } from './menudemo';
+import { MenuDemoRoutingModule } from './menudemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, MenuDemoRoutingModule, MenuModule, ButtonModule, TabViewModule, ToastModule, AppCodeModule, AppDemoActionsModule],

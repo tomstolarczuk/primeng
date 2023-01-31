@@ -26,28 +26,28 @@ import { TooltipModule } from 'primeng/tooltip';
 import { TreeModule } from 'primeng/tree';
 import { AppComponent } from './app.component';
 
-import { CarService } from './service/carservice';
-import { CountryService } from './service/countryservice';
-import { EventService } from './service/eventservice';
-import { NodeService } from './service/nodeservice';
+import { CarService } from '../service/carservice';
+import { CountryService } from '../service/countryservice';
+import { EventService } from '../service/eventservice';
+import { NodeService } from '../service/nodeservice';
 
-import { AppConfigService } from './service/appconfigservice';
-import { CustomerService } from './service/customerservice';
-import { IconService } from './service/iconservice';
-import { JsonService } from './service/jsonservice';
-import { PhotoService } from './service/photoservice';
-import { ProductService } from './service/productservice';
+import { AppConfigService } from '../service/appconfigservice';
+import { CustomerService } from '../service/customerservice';
+import { IconService } from '../service/iconservice';
+import { JsonService } from '../service/jsonservice';
+import { PhotoService } from '../service/photoservice';
+import { ProductService } from '../service/productservice';
 
 import { BadgeModule } from 'primeng/badge';
-import { AppConfigComponent } from './app.config.component';
-import { AppDemoActionsModule } from './app.demoactions.component';
-import { AppFooterComponent } from './app.footer.component';
+import { LandingComponent } from '../components/landing/landing.component';
 import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
 import { AppMainComponent } from './app.main.component';
-import { AppMenuComponent } from './app.menu.component';
-import { AppNewsComponent } from './app.news.component';
-import { AppTopBarComponent } from './app.topbar.component';
-import { LandingComponent } from './components/landing/landing.component';
+import { AppConfigComponent } from './config/app.config.component';
+import { AppDemoActionsModule } from './demoactions/app.demoactions.component';
+import { AppFooterComponent } from './footer/app.footer.component';
+import { AppMenuComponent } from './menu/app.menu.component';
+import { AppNewsComponent } from './news/app.news.component';
+import { AppTopBarComponent } from './topbar/app.topbar.component';
 
 @NgModule({
     declarations: [AppComponent, AppNewsComponent, AppTopBarComponent, AppMenuComponent, AppConfigComponent, AppFooterComponent, LandingComponent, AppMainComponent],

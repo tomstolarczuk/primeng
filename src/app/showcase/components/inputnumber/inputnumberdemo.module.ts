@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { TabViewModule } from 'primeng/tabview';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
 import { InputNumberDemo } from './inputnumberdemo';
 import { InputNumberDemoRoutingModule } from './inputnumberdemo-routing.module';
-import { TabViewModule } from 'primeng/tabview';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
 
 @NgModule({
     imports: [CommonModule, FormsModule, InputNumberDemoRoutingModule, InputNumberModule, TabViewModule, AppDemoActionsModule, AppCodeModule],

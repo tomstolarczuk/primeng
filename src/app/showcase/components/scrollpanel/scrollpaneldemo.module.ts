@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ScrollPanelDemo } from './scrollpaneldemo';
+import { NgModule } from '@angular/core';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
-import { ScrollPanelDemoRoutingModule } from './scrollpaneldemo-routing.module';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { ScrollPanelDemo } from './scrollpaneldemo';
+import { ScrollPanelDemoRoutingModule } from './scrollpaneldemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, ScrollPanelModule, ScrollPanelDemoRoutingModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

@@ -1,17 +1,17 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { GMapDemo } from './gmapdemo';
-import { GMapDemoRoutingModule } from './gmapdemo-routing.module';
-import { GMapModule } from 'primeng/gmap';
-import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { DialogModule } from 'primeng/dialog';
+import { GMapModule } from 'primeng/gmap';
 import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { ToastModule } from 'primeng/toast';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { GMapDemo } from './gmapdemo';
+import { GMapDemoRoutingModule } from './gmapdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, FormsModule, GMapDemoRoutingModule, GMapModule, ToastModule, InputTextModule, CheckboxModule, DialogModule, ButtonModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

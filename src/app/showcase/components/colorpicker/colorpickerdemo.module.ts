@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ColorPickerDemo } from './colorpickerdemo';
-import { ColorPickerDemoRoutingModule } from './colorpickerdemo-routing.module';
+import { ButtonModule } from 'primeng/button';
 import { ColorPickerModule } from 'primeng/colorpicker';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
-import { ButtonModule } from 'primeng/button';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { ColorPickerDemo } from './colorpickerdemo';
+import { ColorPickerDemoRoutingModule } from './colorpickerdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, FormsModule, ColorPickerDemoRoutingModule, ColorPickerModule, TabViewModule, AppDemoActionsModule, ButtonModule, AppCodeModule],

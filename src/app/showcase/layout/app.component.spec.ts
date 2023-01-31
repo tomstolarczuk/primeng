@@ -1,17 +1,17 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { AutoCompleteModule } from '../components/autocomplete/autocomplete';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppConfigComponent } from './app.config.component';
-import { JsonService } from './service/jsonservice';
-import { AppConfigService } from './service/appconfigservice';
 import { HttpClientModule } from '@angular/common/http';
-import { AppTopBarComponent } from './app.topbar.component';
-import { AppMenuComponent } from './app.menu.component';
-import { AppFooterComponent } from './app.footer.component';
+import { async, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
+import { AutoCompleteModule } from '../components/autocomplete/autocomplete';
+import { AppComponent } from './app.component';
 import { AppInputStyleSwitchComponent } from './app.inputstyleswitch.component';
+import { AppConfigComponent } from './config/app.config.component';
+import { AppFooterComponent } from './footer/app.footer.component';
+import { AppMenuComponent } from './menu/app.menu.component';
+import { AppConfigService } from './service/appconfigservice';
+import { JsonService } from './service/jsonservice';
+import { AppTopBarComponent } from './topbar/app.topbar.component';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {

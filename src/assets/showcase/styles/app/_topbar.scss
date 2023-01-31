@@ -11,7 +11,8 @@
     padding: 0 4rem;
 
     &.layout-topbar-sticky {
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--surface-border);
     }
 
     .menu-button {
@@ -159,46 +160,6 @@
                     }
                 }
             }
-        }
-    }
-
-    .theme-badge {
-        padding: 2px 4px;
-        vertical-align: middle;
-        border-radius: 3px;
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 11px;
-        position: relative;
-        top: -1px;
-    }
-
-    .theme-badge.material {
-        background: linear-gradient(to bottom, #2196F3, #2196F3);
-    }
-
-    .theme-badge.bootstrap {
-        background: linear-gradient(to bottom, #563D7C, #966BD8);
-    }
-
-    .theme-badge.darkmode {
-        background: linear-gradient(to bottom, #141d26, #5a6067);
-    }
-}
-
-
-.layout-wrapper-dark {
-    .layout-topbar {
-        &.layout-topbar-sticky {
-            background-color: rgba(0, 0, 0 , 0.3);
-        }
-    }
-}
-
-.layout-wrapper-light {
-    .layout-topbar {
-        &.layout-topbar-sticky {
-            background-color: rgba(255, 255, 255, 0.85);
         }
     }
 }

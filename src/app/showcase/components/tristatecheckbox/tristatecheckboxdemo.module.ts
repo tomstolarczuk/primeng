@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TabViewModule } from 'primeng/tabview';
+import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
+import { AppInputStyleSwitchModule } from '../../layout/app.inputstyleswitch.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
 import { TriStateCheckboxDemo } from './tristatecheckboxdemo';
 import { TriStateCheckboxDemoRoutingModule } from './tristatecheckboxdemo-routing.module';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { TabViewModule } from 'primeng/tabview';
-import { AppInputStyleSwitchModule } from '../../app.inputstyleswitch.component';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
 
 @NgModule({
     imports: [CommonModule, FormsModule, TriStateCheckboxDemoRoutingModule, TriStateCheckboxModule, TabViewModule, AppInputStyleSwitchModule, AppCodeModule, AppDemoActionsModule],

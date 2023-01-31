@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { TabViewModule } from 'primeng/tabview';
+import { ToastModule } from 'primeng/toast';
 import { DynamicDialogModule } from '../../../components/dynamicdialog/dynamicdialog';
-import { ProductListDemo } from './productlistdemo';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
 import { DynamicDialogDemo } from './dynamicdialogdemo';
 import { DynamicDialogDemoRoutingModule } from './dynamicdialogdemo-routing.module';
-import { ToastModule } from 'primeng/toast';
-import { TableModule } from 'primeng/table';
-import { ButtonModule } from 'primeng/button';
-import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { ProductListDemo } from './productlistdemo';
 
 @NgModule({
     imports: [CommonModule, DynamicDialogDemoRoutingModule, DynamicDialogModule, ToastModule, TableModule, ButtonModule, TabViewModule, AppDemoActionsModule, AppCodeModule],

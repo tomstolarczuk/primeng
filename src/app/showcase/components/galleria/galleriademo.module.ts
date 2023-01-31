@@ -1,22 +1,22 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GalleriaDemoRoutingModule } from './galleriademo-routing.module';
+import { NgModule } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 import { GalleriaModule } from 'primeng/galleria';
 import { TabViewModule } from 'primeng/tabview';
-import { ButtonModule } from 'primeng/button';
+import { GalleriaDemoRoutingModule } from './galleriademo-routing.module';
 
-import { GalleriaDemo } from './galleriademo';
-import { GalleriaProgrammaticDemo } from './galleriaprogrammaticdemo';
-import { GalleriaIndicatorDemo } from './galleriaindicatordemo';
-import { GalleriaThumbnailDemo } from './galleriathumbnaildemo';
-import { GalleriaNavigatorDemo } from './gallerianavigatordemo';
-import { GalleriaResponsiveDemo } from './galleriaresponsivedemo';
-import { GalleriaFullscreenDemo } from './galleriafullscreendemo';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { GalleriaAdvancedDemo } from './galleriaadvanceddemo';
 import { GalleriaAutoPlayDemo } from './galleriaautoplaydemo';
 import { GalleriaCaptionDemo } from './galleriacaptiondemo';
-import { GalleriaAdvancedDemo } from './galleriaadvanceddemo';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { GalleriaDemo } from './galleriademo';
+import { GalleriaFullscreenDemo } from './galleriafullscreendemo';
+import { GalleriaIndicatorDemo } from './galleriaindicatordemo';
+import { GalleriaNavigatorDemo } from './gallerianavigatordemo';
+import { GalleriaProgrammaticDemo } from './galleriaprogrammaticdemo';
+import { GalleriaResponsiveDemo } from './galleriaresponsivedemo';
+import { GalleriaThumbnailDemo } from './galleriathumbnaildemo';
 
 @NgModule({
     imports: [CommonModule, GalleriaDemoRoutingModule, GalleriaModule, TabViewModule, AppCodeModule, AppDemoActionsModule, ButtonModule],

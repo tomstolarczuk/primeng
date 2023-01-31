@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AutoCompleteDemo } from './autocompletedemo';
-import { AutoCompleteDemoRoutingModule } from './autocompletedemo-routing.module';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { AutoCompleteDemo } from './autocompletedemo';
+import { AutoCompleteDemoRoutingModule } from './autocompletedemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, FormsModule, AutoCompleteDemoRoutingModule, AutoCompleteModule, TabViewModule, AppDemoActionsModule, AppCodeModule],

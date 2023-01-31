@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AppCodeModule } from '../../app.code.component';
-import { TabViewModule } from 'primeng/tabview';
 import { AutoFocusModule } from 'primeng/autofocus';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
-import { AutoFocusDemo } from './autofocusdemo.component';
-import { AutoFocusDemoRoutingModule } from './autofocusdemo-routing.module';
 import { InputTextModule } from 'primeng/inputtext';
+import { TabViewModule } from 'primeng/tabview';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { AutoFocusDemoRoutingModule } from './autofocusdemo-routing.module';
+import { AutoFocusDemo } from './autofocusdemo.component';
 
 @NgModule({
     imports: [CommonModule, FormsModule, AppCodeModule, TabViewModule, AutoFocusModule, InputTextModule, AppDemoActionsModule, AutoFocusDemoRoutingModule],

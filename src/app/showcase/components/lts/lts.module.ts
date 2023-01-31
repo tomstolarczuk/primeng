@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LTSComponent } from './lts.component';
-import { LTSRoutingModule } from './lts-routing.module';
+import { NgModule } from '@angular/core';
 import { AccordionModule } from 'primeng/accordion';
-import { AppCodeModule } from '../../app.code.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { LTSRoutingModule } from './lts-routing.module';
+import { LTSComponent } from './lts.component';
 
 @NgModule({
     imports: [CommonModule, LTSRoutingModule, AccordionModule, AppCodeModule],

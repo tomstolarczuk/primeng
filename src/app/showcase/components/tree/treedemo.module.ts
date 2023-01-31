@@ -1,24 +1,24 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TreeDemo } from './treedemo';
-import { TreeTemplatingDemo } from './treetemplatingdemo';
-import { TreeSelectionDemo } from './treeselectiondemo';
-import { TreeFilterDemo } from './treefilterdemo';
-import { TreeScrollDemo } from './treescrolldemo';
-import { TreeLazyDemo } from './treelazydemo';
-import { TreeContextMenuDemo } from './treecontextmenudemo';
-import { TreeDragDropDemo } from './treedragdropdemo';
-import { TreeHorizontalDemo } from './treehorizontaldemo';
-import { TreeDemoRoutingModule } from './treedemo-routing.module';
-import { TreeModule } from 'primeng/tree';
-import { ToastModule } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
 import { ContextMenuModule } from 'primeng/contextmenu';
+import { DialogModule } from 'primeng/dialog';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { ToastModule } from 'primeng/toast';
+import { TreeModule } from 'primeng/tree';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { TreeContextMenuDemo } from './treecontextmenudemo';
+import { TreeDemo } from './treedemo';
+import { TreeDemoRoutingModule } from './treedemo-routing.module';
+import { TreeDragDropDemo } from './treedragdropdemo';
+import { TreeFilterDemo } from './treefilterdemo';
+import { TreeHorizontalDemo } from './treehorizontaldemo';
+import { TreeLazyDemo } from './treelazydemo';
+import { TreeScrollDemo } from './treescrolldemo';
+import { TreeSelectionDemo } from './treeselectiondemo';
+import { TreeTemplatingDemo } from './treetemplatingdemo';
 
 @NgModule({
     imports: [CommonModule, FormsModule, TreeDemoRoutingModule, TreeModule, ToastModule, ButtonModule, DialogModule, ContextMenuModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

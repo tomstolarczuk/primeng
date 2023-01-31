@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrderListDemo } from './orderlistdemo';
-import { OrderListDemoRoutingModule } from './orderlistdemo-routing.module';
+import { NgModule } from '@angular/core';
 import { OrderListModule } from 'primeng/orderlist';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { OrderListDemo } from './orderlistdemo';
+import { OrderListDemoRoutingModule } from './orderlistdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, OrderListDemoRoutingModule, OrderListModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

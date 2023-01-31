@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputTextModule } from 'primeng/inputtext';
+import { TabViewModule } from 'primeng/tabview';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
 import { VirtualScrollerDemo } from './virtualscrollerdemo';
 import { VirtualScrollerDemoRoutingModule } from './virtualscrollerdemo-routing.module';
-import { VirtualScrollerModule } from 'primeng/virtualscroller';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { DropdownModule } from 'primeng/dropdown';
-import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
 
 @NgModule({
     imports: [CommonModule, FormsModule, VirtualScrollerDemoRoutingModule, VirtualScrollerModule, ButtonModule, InputTextModule, DropdownModule, TabViewModule, AppCodeModule, AppDemoActionsModule],

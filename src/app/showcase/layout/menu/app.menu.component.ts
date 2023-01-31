@@ -4,8 +4,8 @@ import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { FilterService } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
 import { Subscription } from 'rxjs';
-import { AppConfig } from './domain/appconfig';
-import { AppConfigService } from './service/appconfigservice';
+import { AppConfig } from '../../domain/appconfig';
+import { AppConfigService } from '../../service/appconfigservice';
 
 declare let gtag: Function;
 

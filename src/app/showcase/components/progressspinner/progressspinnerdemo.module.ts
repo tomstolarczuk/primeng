@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProgressSpinnerDemo } from './progressspinnerdemo';
-import { ProgressSpinnerDemoRoutingModule } from './progressspinnerdemo-routing.module';
+import { NgModule } from '@angular/core';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { TabViewModule } from 'primeng/tabview';
-import { AppCodeModule } from '../../app.code.component';
-import { AppDemoActionsModule } from '../../app.demoactions.component';
+import { AppCodeModule } from '../../layout/code/app.code.component';
+import { AppDemoActionsModule } from '../../layout/demoactions/app.demoactions.component';
+import { ProgressSpinnerDemo } from './progressspinnerdemo';
+import { ProgressSpinnerDemoRoutingModule } from './progressspinnerdemo-routing.module';
 
 @NgModule({
     imports: [CommonModule, ProgressSpinnerDemoRoutingModule, ProgressSpinnerModule, TabViewModule, AppDemoActionsModule, AppCodeModule],

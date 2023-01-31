@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ThemingComponent } from './theming.component';
+import { NgModule } from '@angular/core';
+import { AppCodeModule } from '../../layout/code/app.code.component';
 import { ThemingRoutingModule } from './theming-routing.module';
-import { AppCodeModule } from '../../app.code.component';
+import { ThemingComponent } from './theming.component';
 
 @NgModule({
     imports: [CommonModule, ThemingRoutingModule, AppCodeModule],

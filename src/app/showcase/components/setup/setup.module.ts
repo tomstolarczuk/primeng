@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SetupComponent } from './setup.component';
+import { NgModule } from '@angular/core';
+import { AppCodeModule } from '../../layout/code/app.code.component';
 import { SetupRoutingModule } from './setup-routing.module';
-import { AppCodeModule } from '../../app.code.component';
+import { SetupComponent } from './setup.component';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, SetupRoutingModule],

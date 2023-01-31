@@ -1,14 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { environment } from 'src/environments/environment';
-import { AppConfig } from './domain/appconfig';
-import { AppConfigService } from './service/appconfigservice';
-import { JsonService } from './service/jsonservice';
+import { AppConfig } from '../domain/appconfig';
+import { AppConfigService } from '../service/appconfigservice';
+import { JsonService } from '../service/jsonservice';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit, OnDestroy {
     constructor(private configService: AppConfigService, private JsonService: JsonService) {}

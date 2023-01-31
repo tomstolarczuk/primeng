@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { AppConfigService } from './service/appconfigservice';
-import { AppConfig } from './domain/appconfig';
-import { Subscription } from 'rxjs';
+import { NavigationEnd, Router } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
+import { Subscription } from 'rxjs';
+import { AppConfig } from '../domain/appconfig';
+import { AppConfigService } from '../service/appconfigservice';
 import { AppComponent } from './app.component';
 
 declare let gtag: Function;

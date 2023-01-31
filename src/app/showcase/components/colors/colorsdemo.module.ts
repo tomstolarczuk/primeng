@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ColorsDemoComponent } from './colors.component';
+import { NgModule } from '@angular/core';
+import { AppCodeModule } from '../../layout/code/app.code.component';
 import { ColorsDemoRoutingModule } from './colors-routing.module';
-import { AppCodeModule } from '../../app.code.component';
+import { ColorsDemoComponent } from './colors.component';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, ColorsDemoRoutingModule],
