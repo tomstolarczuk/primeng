@@ -40,17 +40,16 @@ import { ProductService } from '../service/productservice';
 
 import { BadgeModule } from 'primeng/badge';
 import { LandingComponent } from '../components/landing/landing.component';
-import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
 import { AppMainComponent } from './app.main.component';
-import { AppConfigComponent } from './config/app.config.component';
+import { AppConfigModule } from './config/app.config.module';
 import { AppDemoActionsModule } from './demoactions/app.demoactions.component';
 import { AppFooterComponent } from './footer/app.footer.component';
 import { AppMenuComponent } from './menu/app.menu.component';
 import { AppNewsComponent } from './news/app.news.component';
-import { AppTopBarComponent } from './topbar/app.topbar.component';
+import { AppTopbarModule } from './topbar/app.topbar.module';
 
 @NgModule({
-    declarations: [AppComponent, AppNewsComponent, AppTopBarComponent, AppMenuComponent, AppConfigComponent, AppFooterComponent, LandingComponent, AppMainComponent],
+    declarations: [AppComponent, AppNewsComponent, AppMenuComponent, AppFooterComponent, LandingComponent, AppMainComponent],
     imports: [
         FormsModule,
         ReactiveFormsModule,
@@ -63,7 +62,6 @@ import { AppTopBarComponent } from './topbar/app.topbar.component';
         RadioButtonModule,
         InputSwitchModule,
         TooltipModule,
-        AppInputStyleSwitchModule,
         AppDemoActionsModule,
         ChartModule,
         TabMenuModule,
@@ -78,7 +76,9 @@ import { AppTopBarComponent } from './topbar/app.topbar.component';
         CheckboxModule,
         ListboxModule,
         InputMaskModule,
-        DropdownModule
+        DropdownModule,
+        AppConfigModule,
+        AppTopbarModule
     ],
     providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }, CarService, CountryService, EventService, NodeService, IconService, CustomerService, PhotoService, JsonService, AppConfigService, ProductService],
     bootstrap: [AppComponent]

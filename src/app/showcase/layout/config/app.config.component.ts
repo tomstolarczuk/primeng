@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { DomHandler } from 'primeng/dom';
 import { Subscription } from 'rxjs';
 import { AppConfig } from '../../domain/appconfig';
@@ -10,9 +10,8 @@ import { AppConfigService } from '../../service/appconfigservice';
     templateUrl: './app.config.component.html'
 })
 export class AppConfigComponent implements OnInit, OnDestroy {
-    active: boolean;
-
     scale: number = 14;
+
     scales: number[] = [12, 13, 14, 15, 16];
 
     outsideClickListener: any;
@@ -21,10 +20,15 @@ export class AppConfigComponent implements OnInit, OnDestroy {
 
     subscription: Subscription;
 
+    sidebarSubscription: Subscription;
+
+    active: boolean;
+
     constructor(private el: ElementRef, private router: Router, private configService: AppConfigService) {}
 
     ngOnInit() {
         this.config = this.configService.config;
+        this.sidebarSubscription = this.configService.configActive$.subscribe((value: boolean) => (this.active = value));
         this.subscription = this.configService.configUpdate$.subscribe((config) => {
             this.config = config;
             if (this.config.theme === 'nano') this.scale = 12;
@@ -33,32 +37,35 @@ export class AppConfigComponent implements OnInit, OnDestroy {
             this.applyScale();
         });
 
-        this.router.events.subscribe((event) => {
-            if (event instanceof NavigationEnd) {
-                this.active = false;
-            }
-        });
-
         if (this.config.theme === 'nano') this.scale = 12;
     }
 
-    toggleConfigurator(event: Event) {
-        this.active = !this.active;
-        event.preventDefault();
-
-        if (this.active) this.bindOutsideClickListener();
-        else this.unbindOutsideClickListener();
+    hideConfigurator() {
+        this.unbindOutsideClickListener();
+        this.configService.toggleConfig();
     }
 
-    hideConfigurator(event) {
-        this.active = false;
-        this.unbindOutsideClickListener();
+    onConfigButtonClick(event: MouseEvent) {
+        this.configService.toggleConfig();
+
+        if (this.active) {
+            this.bindOutsideClickListener();
+        } else {
+            this.unbindOutsideClickListener();
+        }
         event.preventDefault();
     }
 
     changeTheme(event: Event, theme: string, dark: boolean) {
         this.configService.updateConfig({ ...this.config, ...{ theme, dark } });
         event.preventDefault();
+    }
+
+    onInputStyleChange() {
+        this.configService.updateConfig(this.config);
+
+        if (this.config.inputStyle === 'filled') DomHandler.addClass(document.body, 'p-input-filled');
+        else DomHandler.removeClass(document.body, 'p-input-filled');
     }
 
     onRippleChange() {
@@ -106,6 +113,9 @@ export class AppConfigComponent implements OnInit, OnDestroy {
     ngOnDestroy() {
         if (this.subscription) {
             this.subscription.unsubscribe();
+        }
+        if (this.sidebarSubscription) {
+            this.sidebarSubscription.unsubscribe();
         }
     }
 }

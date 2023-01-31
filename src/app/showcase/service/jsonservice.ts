@@ -1,15 +1,21 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+export interface Version {
+    name: string;
+    url: string;
+    version: string;
+}
+
 @Injectable()
 export class JsonService {
     constructor(private http: HttpClient) {}
 
     getVersions() {
         return this.http
-            .get<any>('https://www.primefaces.org/primeng/versions.json')
+            .get<any>('./versions.json')
             .toPromise()
-            .then((res) => res.versions)
+            .then((res) => <Version[]>res.versions)
             .then((data) => {
                 return data;
             });

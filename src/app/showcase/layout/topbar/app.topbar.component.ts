@@ -4,7 +4,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AppConfig } from '../../domain/appconfig';
 import { AppConfigService } from '../../service/appconfigservice';
-import { JsonService } from '../../service/jsonservice';
+import { JsonService, Version } from '../../service/jsonservice';
 
 @Component({
     selector: 'app-topbar',
@@ -31,59 +31,7 @@ export class AppTopBarComponent implements OnInit, OnDestroy {
 
     subscription: Subscription;
 
-    logoMap = {
-        'bootstrap4-light-blue': 'bootstrap4-light-blue.svg',
-        'bootstrap4-light-purple': 'bootstrap4-light-purple.svg',
-        'bootstrap4-dark-blue': 'bootstrap4-dark-blue.svg',
-        'bootstrap4-dark-purple': 'bootstrap4-dark-purple.svg',
-        'md-light-indigo': 'md-light-indigo.svg',
-        'md-light-deeppurple': 'md-light-deeppurple.svg',
-        'md-dark-indigo': 'md-dark-indigo.svg',
-        'md-dark-deeppurple': 'md-dark-deeppurple.svg',
-        'mdc-light-indigo': 'md-light-indigo.svg',
-        'mdc-light-deeppurple': 'md-light-deeppurple.svg',
-        'mdc-dark-indigo': 'md-dark-indigo.svg',
-        'mdc-dark-deeppurple': 'md-dark-deeppurple.svg',
-        'lara-light-indigo': 'lara-light-indigo.png',
-        'lara-light-purple': 'lara-light-purple.png',
-        'lara-light-blue': 'lara-light-blue.png',
-        'lara-light-teal': 'lara-light-teal.png',
-        'lara-dark-indigo': 'lara-dark-indigo.png',
-        'lara-dark-purple': 'lara-dark-purple.png',
-        'lara-dark-blue': 'lara-dark-blue.png',
-        'lara-dark-teal': 'lara-dark-teal.png',
-        'saga-blue': 'saga-blue.png',
-        'saga-green': 'saga-green.png',
-        'saga-orange': 'saga-orange.png',
-        'saga-purple': 'saga-purple.png',
-        'vela-blue': 'vela-blue.png',
-        'vela-green': 'vela-green.png',
-        'vela-orange': 'vela-orange.png',
-        'vela-purple': 'vela-purple.png',
-        'arya-blue': 'arya-blue.png',
-        'arya-green': 'arya-green.png',
-        'arya-orange': 'arya-orange.png',
-        'arya-purple': 'arya-purple.png',
-        nova: 'nova.png',
-        'nova-alt': 'nova-alt.png',
-        'nova-accent': 'nova-accent.png',
-        'nova-vue': 'nova-vue.png',
-        'luna-blue': 'luna-blue.png',
-        'luna-green': 'luna-green.png',
-        'luna-pink': 'luna-pink.png',
-        'luna-amber': 'luna-amber.png',
-        rhea: 'rhea.png',
-        'fluent-light': 'fluent-light.png',
-        'soho-light': 'soho-light.png',
-        'soho-dark': 'soho-dark.png',
-        'viva-light': 'viva-light.svg',
-        'viva-dark': 'viva-dark.svg',
-        mira: 'mira.jpg',
-        nano: 'nano.jpg',
-        'tailwind-light': 'tailwind-light.png'
-    };
-
-    versions: any[];
+    versions: Version[];
 
     scrollListener: any;
 
@@ -119,6 +67,11 @@ export class AppTopBarComponent implements OnInit, OnDestroy {
 
     onMenuButtonClick(event: Event) {
         this.menuButtonClick.emit();
+        event.preventDefault();
+    }
+
+    onConfigButtonClick(event: Event) {
+        this.configService.toggleConfig();
         event.preventDefault();
     }
 
