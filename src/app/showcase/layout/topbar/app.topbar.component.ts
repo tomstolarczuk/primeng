@@ -8,7 +8,7 @@ import { JsonService } from '../../service/jsonservice';
 
 @Component({
     selector: 'app-topbar',
-    template: ` <div class="layout-topbar" #containerElement></div> `,
+    templateUrl: './app.topbar.component.html',
     animations: [
         trigger('overlayMenuAnimation', [
             transition(':enter', [style({ opacity: 0, transform: 'scaleY(0.8)' }), animate('.12s cubic-bezier(0, 0, 0.2, 1)', style({ opacity: 1, transform: '*' }))]),

@@ -3,10 +3,7 @@ import { AfterViewInit, Component, ElementRef, Input, NgModule, ViewChild } from
 
 @Component({
     selector: 'app-code',
-    template: `
-        <pre [ngClass]="'language-' + lang" [style]="style" [class]="styleClass"><code #code><ng-content></ng-content>
-</code></pre>
-    `
+    templateUrl: './app.code.component.html'
 })
 export class AppCodeComponent implements AfterViewInit {
     @Input() lang = 'markup';
