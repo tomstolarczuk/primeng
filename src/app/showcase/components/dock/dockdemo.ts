@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { MenuItem, MessageService } from 'primeng/api';
 import { TerminalService } from 'primeng/terminal';
 import { Subscription } from 'rxjs';
-import { NodeService } from '../../service/nodeservice';
-import { PhotoService } from '../../service/photoservice';
+import { NodeService } from '../../service/node.service';
+import { PhotoService } from '../../service/photo.service';
 
 @Component({
     templateUrl: './dockdemo.html',

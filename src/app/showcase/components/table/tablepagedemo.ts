@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer } from '../../domain/customer';
-import { CustomerService } from '../../service/customerservice';
+import { CustomerService } from '../../service/customer.service';
 
 @Component({
     templateUrl: './tablepagedemo.html'

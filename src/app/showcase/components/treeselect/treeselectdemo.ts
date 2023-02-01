@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NodeService } from '../../service/nodeservice';
+import { NodeService } from '../../service/node.service';
 
 @Component({
     templateUrl: './treeselectdemo.html',

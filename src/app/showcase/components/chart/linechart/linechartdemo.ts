@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
 import { Subscription } from 'rxjs';
-import { AppConfigService } from '../../../service/appconfigservice';
 import { AppConfig } from '../../../domain/appconfig';
+import { AppConfigService } from '../../../service/appconfig.service';
 
 @Component({
     templateUrl: './linechartdemo.html',

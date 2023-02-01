@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../domain/product';
-import { ProductService } from '../../service/productservice';
+import { ProductService } from '../../service/product.service';
 
 @Component({
     templateUrl: './tablecoltoggledemo.html'

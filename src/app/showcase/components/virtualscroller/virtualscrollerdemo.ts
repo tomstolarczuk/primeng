@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LazyLoadEvent, SelectItem } from 'primeng/api';
 import { Product } from '../../domain/product';
-import { ProductService } from '../../service/productservice';
+import { ProductService } from '../../service/product.service';
 
 @Component({
     templateUrl: './virtualscrollerdemo.html',

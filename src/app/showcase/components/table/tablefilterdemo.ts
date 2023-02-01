@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Table } from 'primeng/table';
 import { Customer, Representative } from '../../domain/customer';
-import { CustomerService } from '../../service/customerservice';
+import { CustomerService } from '../../service/customer.service';
 
 @Component({
     templateUrl: './tablefilterdemo.html',

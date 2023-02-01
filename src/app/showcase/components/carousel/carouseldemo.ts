@@ -1,6 +1,6 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { ProductService } from '../../service/productservice';
+import { Component } from '@angular/core';
 import { Product } from '../../domain/product';
+import { ProductService } from '../../service/product.service';
 
 @Component({
     templateUrl: './carouseldemo.html',

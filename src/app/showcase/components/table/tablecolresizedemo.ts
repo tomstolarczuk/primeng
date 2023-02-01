@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../../domain/product';
 import { Customer } from '../../domain/customer';
-import { ProductService } from '../../service/productservice';
-import { CustomerService } from '../../service/customerservice';
+import { Product } from '../../domain/product';
+import { CustomerService } from '../../service/customer.service';
+import { ProductService } from '../../service/product.service';
 
 @Component({
     templateUrl: './tablecolresizedemo.html'

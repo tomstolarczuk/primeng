@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TreeNode } from 'primeng/api';
-import { NodeService } from '../../service/nodeservice';
+import { NodeService } from '../../service/node.service';
 
 @Component({
     templateUrl: './treetablelazydemo.html'

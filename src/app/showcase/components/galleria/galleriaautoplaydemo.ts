@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { PhotoService } from '../../service/photoservice';
+import { Component, OnInit } from '@angular/core';
+import { PhotoService } from '../../service/photo.service';
 
 @Component({
     templateUrl: './galleriaautoplaydemo.html'

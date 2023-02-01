@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from '../../domain/product';
-import { ProductService } from '../../service/productservice';
+import { ProductService } from '../../service/product.service';
 
 @Component({
     templateUrl: './picklistdemo.html',

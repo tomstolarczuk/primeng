@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CountryService } from '../../service/countryservice';
-import { NodeService } from '../../service/nodeservice';
+import { CountryService } from '../../service/country.service';
+import { NodeService } from '../../service/node.service';
 
 @Component({
     templateUrl: './invaliddemo.html'

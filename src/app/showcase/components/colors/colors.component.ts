@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AppConfig } from '../../domain/appconfig';
-import { AppConfigService } from '../../service/appconfigservice';
+import { AppConfigService } from '../../service/appconfig.service';
 
 @Component({
     templateUrl: './colors.component.html',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CarService } from '../../service/carservice';
+import { FilterMatchMode, FilterService, SelectItem } from 'primeng/api';
 import { Car } from '../../domain/car';
-import { SelectItem, FilterService, FilterMatchMode } from 'primeng/api';
+import { CarService } from '../../service/car.service';
 
 @Component({
     templateUrl: './filterservicedemo.html'

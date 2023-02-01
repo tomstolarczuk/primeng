@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SelectItemGroup } from 'primeng/api';
-import { CountryService } from '../../service/countryservice';
+import { CountryService } from '../../service/country.service';
 
 interface City {
     name: string;
