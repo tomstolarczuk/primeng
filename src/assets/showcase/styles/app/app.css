@@ -452,7 +452,7 @@ pre[class*=language-] code .token.operator, pre[class*=language-] code .token.st
   background: var(--surface-card);
   padding: 2rem;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .layout-wrapper .layout-content .card .card-header {
   display: flex;
@@ -632,6 +632,184 @@ pre[class*=language-] code .token.operator, pre[class*=language-] code .token.st
 }
 
 /* DESIGNER */
+.doc {
+  display: flex;
+  flex-wrap: wrap;
+}
+.doc .doc-main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+.doc .doc-section-label {
+  display: flex;
+  align-items: center;
+  scroll-margin-top: 6.5rem;
+}
+.doc .doc-section-label > a {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  margin-left: 1rem;
+  display: none;
+  transition: opacity 0.3s, colors 0.3s;
+}
+.doc .doc-section-label:hover > a {
+  display: block;
+}
+.doc .doc-section-label:hover > a:hover {
+  opacity: 1;
+}
+.doc .doc-section-description {
+  font-size: 1.125rem;
+  color: var(--surface-800);
+}
+.doc .doc-section-description i {
+  background-color: var(--primary-100);
+  color: var(--primary-900);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.doc .doc-section-description a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.doc .doc-section-description a:hover {
+  text-decoration: underline;
+}
+.doc .doc-section-description.main {
+  margin-bottom: 1rem;
+}
+.doc .doc-tablewrapper {
+  overflow: auto;
+}
+.doc .doc-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--surface-card);
+  margin-bottom: 1.5rem;
+}
+.doc .doc-table th {
+  border-bottom: 1px solid var(--surface-border);
+  padding: 1rem;
+  text-align: left;
+}
+.doc .doc-table tbody tr:hover {
+  background: var(--surface-hover);
+}
+.doc .doc-table tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--surface-border);
+}
+.doc .doc-table tbody td:first-child {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, Liberation Mono, monospace;
+  font-weight: 700;
+  color: var(--text-color-secondary);
+}
+.doc .doc-table tbody td:nth-child(2):not(:last-child) {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.doc-intro {
+  margin-bottom: 2rem;
+}
+.doc-intro p {
+  font-size: 1.25rem;
+  color: var(--surface-800);
+}
+
+.doc-section-nav {
+  position: sticky;
+  list-style: none;
+  width: 17rem;
+  height: calc(100vh - 15rem);
+  top: 7rem;
+  right: 0;
+  flex-basis: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 0.25rem 1rem;
+  margin: 0 1rem;
+  overflow-y: auto;
+}
+.doc-section-nav li.navbar-item {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-color: var(--surface-border);
+  z-index: 1;
+}
+.doc-section-nav li.navbar-item button {
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  display: inline;
+  color: var(--text-color);
+}
+.doc-section-nav li.navbar-item button:hover {
+  color: var(--primary-color);
+}
+.doc-section-nav li.navbar-item.active-navbar-item {
+  border-color: var(--primary-color);
+}
+.doc-section-nav li.navbar-item.active-navbar-item button {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.doc-section-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+.doc-section-nav ul li.navbar-child-item {
+  border-left: 5rem;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-color: var(--surface-border);
+  z-index: 1;
+}
+.doc-section-nav ul li.navbar-child-item button {
+  padding: 0.25rem;
+  margin-left: 1.5rem;
+  color: var(--text-color);
+}
+.doc-section-nav ul li.navbar-child-item button:hover {
+  color: var(--primary-color);
+}
+.doc-section-nav ul li.navbar-child-item.active-navbar-child-item {
+  border-color: var(--primary-color);
+}
+.doc-section-nav ul li.navbar-child-item.active-navbar-child-item button {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.doc-section-code-tooltip .p-tooltip-text {
+  padding: 0.5rem;
+  font-size: 11px;
+}
+
+.doc-section-code div::-webkit-scrollbar {
+  width: 5px;
+}
+.doc-section-code .p-button-label {
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+.doc-section-code .doc-section-code-active .p-button-label {
+  font-weight: bold;
+}
+.doc-section-code pre {
+  margin: 0 0 1.5rem 0;
+}
+
 /* Home Component*/
 .home a {
   text-decoration: none;
