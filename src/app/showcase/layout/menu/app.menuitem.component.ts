@@ -1,7 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MenuItem } from './app.menu.component';
 
 @Component({
-    selector: 'app-menuitem',
+    selector: '[app-menuitem]',
     templateUrl: './app.menuitem.component.html'
 })
-export class AppMenuItemComponent {}
+export class AppMenuItemComponent {
+    @Input() item: MenuItem;
+
+    @Input() root: boolean = true;
+}
