@@ -1,31 +1,41 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Input, NgModule, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, NgModule, ViewChild } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
+import { TooltipModule } from 'primeng/tooltip';
+import { CodeHighlighterModule } from '../codehighlighter/app.codehighlighter.component';
+
 
 @Component({
     selector: 'app-code',
     templateUrl: './app.code.component.html'
 })
-export class AppCodeComponent implements AfterViewInit {
-    @Input() lang = 'markup';
+export class AppCodeComponent {
 
-    @Input() style: any;
+    @Input() code;
+    @Input() hideToggleCode: boolean = false; 
+    @Input() hideCodeSandbox: boolean = false;
+    @Input() hideStackBlitz: boolean = false;
+    
 
-    @Input() styleClass: string;
+@ViewChild('code') codeViewChild: ElementRef;
 
-    @ViewChild('code') codeViewChild: ElementRef;
+codeLang: string = 'html'
 
-    constructor(public el: ElementRef) {}
+constructor() { }
 
-    ngAfterViewInit() {
-        if (window['Prism']) {
-            window['Prism'].highlightElement(this.codeViewChild.nativeElement);
-        }
-    }
+changeLang(lang: string) {
+    this.codeLang = lang
+}
+
+   async copyCode(){
+    await navigator.clipboard.writeText(this.code[this.codeLang])
+}
+
 }
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, ButtonModule, TooltipModule, CodeHighlighterModule],
     exports: [AppCodeComponent],
     declarations: [AppCodeComponent]
 })
-export class AppCodeModule {}
+export class AppCodeModule { }
