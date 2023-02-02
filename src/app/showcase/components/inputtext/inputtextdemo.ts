@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { BasicDocComponent } from './basicdoc';
+import { ImportDocComponent } from './importdoc';
 
 @Component({
     templateUrl: './inputtextdemo.html',
@@ -18,4 +20,17 @@ export class InputTextDemo {
     value5: string = 'Disabled';
 
     value6: string;
+
+    docs = [
+        {
+            id: 'import',
+            label: 'Import',
+            component: ImportDocComponent
+        },
+        {
+            id: 'basic',
+            label: 'Basic',
+            component: BasicDocComponent
+        },
+    ]
 }
